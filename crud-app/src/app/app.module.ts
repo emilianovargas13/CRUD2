@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-im
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { CommonModule } from "@angular/common";
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { CommonModule } from "@angular/common";
     BrowserModule,
     FormsModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
 
   ],
   providers: [],
