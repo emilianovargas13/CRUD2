@@ -1,0 +1,11 @@
+<div>
+  <input type="text" [(ngModel)]="newProduct.name" placeholder="Nombre">
+  <button (click)="addProduct()">Agregar</button>
+</div>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }}
+    <button (click)="deleteProduct(product)">Eliminar</button>
+  </li>
+</ul>
